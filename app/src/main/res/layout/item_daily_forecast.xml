@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_daily"
+    android:layout_width="200dp"
+    android:layout_height="240dp"
+    android:layout_margin="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_weekday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Weekday" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="4dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_weekday"
+            app:layout_constraintTop_toBottomOf="@+id/tv_weekday"
+            tools:text="Date" />
+
+        <ImageView
+            android:id="@+id/iv_icon_daily"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_date"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+        <TextView
+            android:id="@+id/tv_temp_afternoon"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="26sp"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintStart_toEndOf="@+id/tv_text_temp_day"
+            app:layout_constraintTop_toTopOf="@+id/tv_text_temp_day" />
+
+        <TextView
+            android:id="@+id/tv_text_temp_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/at_day"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="26sp"
+            app:layout_constraintStart_toStartOf="@+id/iv_icon_daily"
+            app:layout_constraintTop_toBottomOf="@+id/iv_icon_daily" />
+
+        <TextView
+            android:id="@+id/tv_text_temp_night"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/at_night"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_text_temp_day"
+            app:layout_constraintTop_toBottomOf="@+id/tv_text_temp_day" />
+
+        <TextView
+            android:id="@+id/tv_temp_night"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_text_temp_night"
+            app:layout_constraintTop_toTopOf="@+id/tv_text_temp_night"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
