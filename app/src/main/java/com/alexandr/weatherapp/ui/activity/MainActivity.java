@@ -67,8 +67,8 @@ public class MainActivity extends MvpAppCompatActivity implements MainView {
 
 //        sss
 //        aaa
-//        bnbb
-
+//        bnb
+//        vvv
     }
 
     private void checkPermission(){
